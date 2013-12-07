@@ -1,0 +1,8 @@
+{
+  "camelcase": true,
+  "indent": 2,
+  "eqeqeq": true,
+  "curly": true,
+  "unused": true,
+  "trailing": true
+}
