@@ -1,3 +1,10 @@
+---
+nav:
+  - {name: "home", label: "Home", href: ""}
+  - {name: "work", label: "Work", href: "work/"}
+  - {name: "aboutus", label: "About Us", "About Us", href: "aboutus/"}
+  - {name: "contact", label: "Contact", "Contact", href: "contact/"}
+---
 <!DOCTYPE html>
 <html class="no-js">
   <head>
@@ -13,6 +20,9 @@
   </head>
   <body>
     <h1>{{ page.title }}</h1>
+    {% include header.html nav=page.nav%}
+
+    {{content}}
   </body>
   <script type="text/javascript" src="{{ page.rootPath }}assets/js/thegoodrush.min.js"></script>
 </html>

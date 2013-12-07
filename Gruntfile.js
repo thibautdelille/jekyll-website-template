@@ -247,7 +247,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['scss','js','images','vendors', 'jekyll']);
 
-  grunt.registerTask('watch', ['connect:server', 'watch']);
+  grunt.registerTask('dev', ['connect', 'watch']);
 
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-sass');
