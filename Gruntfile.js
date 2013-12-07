@@ -39,10 +39,10 @@ module.exports = function(grunt) {
       options: {
         separator: ';',
         stripBanners: true,
-        banner: '/*!\n<%= pkg.name %>\nv<%= site.version %>\n<%= grunt.template.today("mm-dd-yyyy") %>\nMade at <%= pkg.author.name %> - <%= pkg.author.url %>\n*/'
+        banner: '/*!\n<%= pkg.name %>\nv<%= site.version %>\n<%= grunt.template.today("mm-dd-yyyy") %>\nMade by <%= pkg.author.name %> - <%= pkg.author.url %>\n*/'
       },
       js: {
-        src: ['assets/vendors/modernizr/modernizr-custom.js', 'assets/js/tgr-*.js'],
+        src: ['assets/vendors/modernizr/modernizr.js', 'assets/js/tgr-*.js'],
         dest: 'assets/js/thegoodrush.js'
       },
       css: {
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
           { 
             expand: true, 
             cwd: './assets/vendors', 
-            src: ['./**/*.*', '!./modernizr/'], 
+            src: ['./**/*.*', '!./modernizr/modernizr.js'], 
             dest: 'jekyll/assets/vendors/' 
           }
         ]
@@ -134,7 +134,7 @@ module.exports = function(grunt) {
     */
     jshint: {
       all: [
-        'assets/js/**/*.js'
+        'assets/js/**/tgr-*.js'
       ],
       options: {
         jshintrc: '.jshintrc'
