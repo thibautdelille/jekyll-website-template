@@ -5,7 +5,7 @@
  1. Run `npm install` (it use [Node](http://nodejs.org/) and [npm](https://npmjs.org/))
  2. If necessary, [install Jekyll](http://jekyllrb.com/docs/installation/) (requires v1.x).
  3. Run `grunt`, Make sure you have the Grunt command-line interface with `npm install -g grunt-cli`
- 4. Run `grunt watch`
+ 4. Run `grunt dev`
  5. Open [http://localhost:3105](http://localhost:3105) in your browser, and voilà.
 
 This Project use
