@@ -1,5 +1,4 @@
 # Template for Website using jekyll and Sass
----
 
 ### Install the Project
  1. Run `npm install` (it use [Node](http://nodejs.org/) and [npm](https://npmjs.org/))
