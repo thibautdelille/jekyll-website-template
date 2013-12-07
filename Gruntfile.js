@@ -103,7 +103,14 @@ module.exports = function(grunt) {
     */
 
     cssmin: {
-      minify: {
+      dist: {
+        expand: true,
+        cwd: 'assets/css/',
+        src: ['*.css', '!*.min.css', '!*.sass.css', '!*.autoprefixed.css'],
+        dest: 'dist/assets/css/',
+        ext: '.min.css'
+      },
+      jekyll: {
         expand: true,
         cwd: 'assets/css/',
         src: ['*.css', '!*.min.css', '!*.sass.css', '!*.autoprefixed.css'],

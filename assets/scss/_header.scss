@@ -1,0 +1,29 @@
+/* header */
+header{
+  ul{
+    margin:0;
+    padding:0;
+    @include clearfix();
+    li{
+      list-style-type: none;
+      float:left;
+      a{
+        padding:10px;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      &:first-child{
+        a{
+          padding-left:0px;
+        }
+      }
+      &.active{
+        a{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

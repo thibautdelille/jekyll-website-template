@@ -2,7 +2,7 @@
   <nav>
     <ul>
       {% for(item in include.nav) %}
-        <li><a href="{{page.rootPath}}{{item.href}}">{{item.label}}</a></li>
+        <li {% if item.name == page.name %}class="active"{% endif %}><a href="{{page.rootPath}}{{item.href}}">{{item.label}}</a></li>
       {% endfor %}
     </ul> 
   </nav>

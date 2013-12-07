@@ -1,7 +1,7 @@
 {
-  "name": "thegoodrush",
+  "name": "site_template",
   "version": "0.1.0",
-  "description": "Website the Good Rush",
+  "description": "Template for Website using jekyll and Sass",
   "author": {
     "url": "http://www.thibautdelille.com",
     "name": "Thibaut Delille"

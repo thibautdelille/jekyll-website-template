@@ -1,4 +1,4 @@
-# The Good Rush
+# Template for Website using jekyll and Sass
 ---
 
 ### Install the Project
