@@ -10,7 +10,7 @@
 
 This Project use
 - [Sass](http://sass-lang.com/)
-- [Node](http://nodejs.org/) and [npm](https://npmjs.org/) so we can...
+- [Node](http://nodejs.org/) and [npm](https://npmjs.org/)
 - [Grunt](http://gruntjs.com/)
 - [Jekyll](http://jekyllrb.com/)
 - [LiveReload](http://livereload.com/) (style injection, you'll need the [browser extensions](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-))
