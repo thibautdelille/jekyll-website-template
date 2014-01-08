@@ -42,8 +42,8 @@ module.exports = function(grunt) {
         banner: '/*!\n<%= pkg.name %>\nv<%= site.version %>\n<%= grunt.template.today("mm-dd-yyyy") %>\nMade by <%= pkg.author.name %> - <%= pkg.author.url %>\n*/'
       },
       js: {
-        src: ['assets/vendors/modernizr/modernizr.js', 'assets/js/tgr-*.js'],
-        dest: 'assets/js/thegoodrush.js'
+        src: ['assets/vendors/modernizr/modernizr.js', 'assets/js/*.js'],
+        dest: 'assets/js/script.js'
       },
       css: {
         options: {
@@ -141,7 +141,7 @@ module.exports = function(grunt) {
     */
     jshint: {
       all: [
-        'assets/js/**/tgr-*.js'
+        'assets/js/**/*.js', '!assets/js/script*.js'
       ],
       options: {
         jshintrc: '.jshintrc'
@@ -210,7 +210,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: {
-          'jekyll/assets/js/thegoodrush.min.js': ['assets/js/thegoodrush.js']
+          'jekyll/assets/js/script.min.js': ['assets/js/script.js']
         }
       }
     },
@@ -252,7 +252,7 @@ module.exports = function(grunt) {
   grunt.registerTask('vendors', ['copy:vendors']);
   grunt.registerTask('images', ['copy:images']);
 
-  grunt.registerTask('default', ['scss','js','images','vendors', 'jekyll']);
+  grunt.registerTask('default', ['scss', 'js', 'images','vendors', 'jekyll']);
 
   grunt.registerTask('dev', ['connect', 'watch']);
 
