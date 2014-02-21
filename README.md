@@ -1,4 +1,5 @@
-# Template for Website using jekyll and Sass
+# Jekyll Website Template
+Just to start a quick prototype
 
 ### Install the Project
  1. Run `npm install` (it use [Node](http://nodejs.org/) and [npm](https://npmjs.org/))
