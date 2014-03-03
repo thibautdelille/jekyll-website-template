@@ -12,6 +12,7 @@ nav:
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ site.title }} - {{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="{{ page.rootPath }}assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ page.rootPath }}assets/css/style.min.css">
 
     <!--[if lte IE 8]>
@@ -24,5 +25,7 @@ nav:
 
     {{content}}
   </body>
-  <script type="text/javascript" src="{{ page.rootPath }}assets/js/thegoodrush.min.js"></script>
+  <script type="text/javascript" src="{{ page.rootPath }}assets/vendors/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ page.rootPath }}assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{{ page.rootPath }}assets/js/script.min.js"></script>
 </html>
